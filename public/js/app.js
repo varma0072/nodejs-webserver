@@ -11,7 +11,7 @@ weatherForm.addEventListener('submit',(e)=>{
         console.log('please enter the location ')
     }else{
         messOne.textContent = 'loading'
-        messtwo.textContent= 'a'
+        messtwo.textContent= ''
     fetch('/weather?address='+location).then((response)=>{
         response.json().then((data)=>{
             if(data.error){
