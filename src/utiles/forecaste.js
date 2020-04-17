@@ -5,7 +5,7 @@ const forecast=(lan,long,callback)=>{
        if(error){
           callback("unable to connect to weather stack , check your internet ",undefined)
        } else if(body.error){
-           callback('unable to  find the location ',undefined)
+           callback('unable to  find the location . my weather stack API is unsubsribed now because it is free version and  time period is over . i will continue my service after i subscribe to weather stack',undefined)
        } else{
           callback(undefined,'description :'+body.current.weather_descriptions +'.... it is currently '+body.current.temperature+' temperature out.  humudity:'+body.current.humidity+'. wind speed:'+body.current.wind_speed)
        }
