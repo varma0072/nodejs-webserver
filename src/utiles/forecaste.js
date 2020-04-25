@@ -1,6 +1,6 @@
 const request=require('request')
 const forecast=(lan,long,callback)=>{
-    const url='http://api.weatherstack.com/current?access_key=e53e43e267023b7de6e0f9dc79a048d9&query='+lan+','+long+'&units=m'
+    const url='http://api.weatherstack.com/current?access_key=9d8574b126bc910b046d1355817ca474&query='+lan+','+long+'&units=m'
     request({url,json:true},(error,{body})=>{
        if(error){
           callback("unable to connect to weather stack , check your internet ",undefined)
